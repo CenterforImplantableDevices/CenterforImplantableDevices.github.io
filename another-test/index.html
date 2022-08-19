@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Chronic Epilepsy Dataset</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/css/components/bootstrap-grid_v%3D25338d946a.css">
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen_v%3D25338d946a.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+    <style>
+        .gh-content {
+            position: relative;
+        }
+
+        .gh-toc > .toc-list {
+            position: relative;
+        }
+
+        .toc-list {
+            overflow: hidden;
+            list-style: none;
+        }
+
+        @media (min-width: 1300px) {
+            .gh-sidebar {
+                position: absolute; 
+                top: 0;
+                bottom: 0;
+                margin-top: 4vmin;
+                grid-column: wide-start / main-start; /* Place the TOC to the left of the content */
+            }
+        
+            .gh-toc {
+                position: sticky; /* On larger screens, TOC will stay in the same spot on the page */
+                top: 4vmin;
+            }
+        }
+
+        .gh-toc .is-active-link::before {
+            background-color: var(--ghost-accent-color); /* Defines TOC   accent color based on Accent color set in Ghost Admin */
+        } 
+    </style>
+
+    <link rel="icon" href="../content/images/size/w256h256/2022/08/CID2.png" type="image/png">
+    <link rel="canonical" href="http://localhost:8080/another-test/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Cybernetic Implantable Devices Lab">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Chronic Epilepsy Dataset">
+    <meta property="og:description" content="chronic epilepsy data from oxford (OX) devices.">
+    <meta property="og:url" content="http://localhost:8080/another-test/">
+    <meta property="og:image" content="../content/images/2022/08/photo-1655635643486-a17bc48771ff-1.jpg">
+    <meta property="article:published_time" content="2022-07-14T18:28:59.000Z">
+    <meta property="article:modified_time" content="2022-08-02T15:38:20.000Z">
+    <meta property="article:tag" content="CID Resources">
+    <meta property="article:tag" content="Datasets">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chronic Epilepsy Dataset">
+    <meta name="twitter:description" content="chronic epilepsy data from oxford (OX) devices.">
+    <meta name="twitter:url" content="http://localhost:8080/another-test/">
+    <meta name="twitter:image" content="http://localhost:8080/content/images/2022/08/photo-1655635643486-a17bc48771ff-1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Camden Shultz">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="CID Resources, Datasets">
+    <meta property="og:image:width" content="1125">
+    <meta property="og:image:height" content="1125">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Cybernetic Implantable Devices Lab",
+        "url": "http://localhost:8080/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:8080/content/images/2022/08/CID2-1.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Camden Shultz",
+        "url": "http://localhost:8080/author/camden/",
+        "sameAs": []
+    },
+    "headline": "Chronic Epilepsy Dataset",
+    "url": "http://localhost:8080/another-test/",
+    "datePublished": "2022-07-14T18:28:59.000Z",
+    "dateModified": "2022-08-02T15:38:20.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:8080/content/images/2022/08/photo-1655635643486-a17bc48771ff-1.jpg",
+        "width": 1125,
+        "height": 1125
+    },
+    "keywords": "CID Resources, Datasets",
+    "description": "chronic epilepsy data from oxford (OX) devices.",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://localhost:8080/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.2">
+    <link rel="alternate" type="application/rss+xml" title="Cybernetic Implantable Devices Lab" href>
+    <script defer src="https://unpkg.com/@tryghost/portal@~2.2.0/umd/portal.min.js" data-ghost="http://localhost:8080/" data-key="86789228060692eeb8d9ea82cc" data-api="http://localhost:8080/ghost/api/content/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style><style>:root {--ghost-accent-color: #1F3668;}</style>
+
+</head>
+<body class="post-template tag-resources tag-dataset has-cover ">
+<div class="viewport">
+
+
+    
+
+
+<main id="site-main" class="site-main">
+<article class=" post tag-resources tag-dataset featured">
+
+    <header id="gh-head" class="gh-head header-background">
+        <nav class="gh-head-inner inner outer">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo" href="../">
+                        <img src="../content/images/2022/08/CID2-1.png" alt="Cybernetic Implantable Devices Lab">
+                </a>
+            </div>
+            <div class="gh-head-menu">
+                <ul class="nav">
+    <li class="nav-research"><a href="../research/">Research</a></li>
+    <li class="nav-milestones"><a href="../milestones/">Milestones</a></li>
+    <li class="nav-resources"><a href="../resources/">Resources</a></li>
+    <li class="nav-blog"><a href="../blog/">Blog</a></li>
+    <li class="nav-about"><a href="../about/">About</a></li>
+</ul>
+
+            </div>
+        </nav>
+
+        <div class="container mt-3 mb-2 pb-1" style="padding-top: 8vmin;">
+            <div class="row">
+                <div class="col-6">
+                        <img style="margin-bottom: 8vmin; border-radius: 1em;" alt="Chronic Epilepsy Dataset" src="../content/images/2022/08/photo-1655635643486-a17bc48771ff-1.jpg">
+                </div>
+                <div class="col-6" style="padding-left: 4vmin;">
+                    <div>
+                        <h1>Chronic Epilepsy Dataset</h1>                      
+                        <div><p></p></div>
+                    </div>
+                    <section>
+                        <div class="article-tag post-card-tags" style="padding-top: 4vmin;">
+                                <a href="../resources/" title="CID Resources" class="tag tag-62cb2236f26d632ae41758db resources"><span class="post-card-primary-tag">— CID Resources</span></a>
+                                <a href="../datasets/" title="Datasets" class="tag tag-62cc64dc6e19915d14bacfda dataset"><span class="post-card-primary-tag">— Datasets</span></a>
+                        <div class="byline-meta-content">
+                            <time class="byline-meta-date" datetime="2022-07-14">Jul 14, 2022</time>
+                        </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="gh-content gh-canvas" style="padding-top: 8vmin;">
+        <aside class="gh-sidebar"><div class="gh-toc"></div></aside>
+        <p>chronic epilepsy data from oxford (OX) devices.</p>
+    </section>
+
+
+</article>
+</main>
+
+
+
+
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="../">Cybernetic Implantable Devices Lab</a> &copy; 2022
+            </section>
+            <nav class="site-footer-nav">
+                <ul class="nav">
+    <li class="nav-research"><a href="../research/">Research</a></li>
+    <li class="nav-milestones"><a href="../milestones/">Milestones</a></li>
+    <li class="nav-resources"><a href="../resources/">Resources</a></li>
+    <li class="nav-the-bionode"><a href="../bionode/">The Bionode</a></li>
+    <li class="nav-toast-api"><a href="../toast/">Toast API</a></li>
+    <li class="nav-blog"><a href="../blog/">Blog</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </footer>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous">
+</script>
+<script src="../assets/built/main_v%3D25338d946a.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+
+<script>
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.gh-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.gh-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3, h4',
+    });
+</script>
+
+
+
+</body>
+</html>

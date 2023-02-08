@@ -1,6 +1,0 @@
-User-agent: *
-Sitemap: http://lightning.wse.jhu.edu/sitemap.xml
-Disallow: /ghost/
-Disallow: /p/
-Disallow: /email/
-Disallow: /r/

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="//cid.wse.jhu.edu/sitemap.xsl"?>
+<sitemapindex xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xhtml="https://www.w3.org/1999/xhtml"
+    xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+    https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    https://www.w3.org/1999/xhtml
+    https://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd">
+    
+<sitemap>
+<loc>https://cid.wse.jhu.edu/sitemap-pages.xml</loc>
+</sitemap>
+
+<sitemap>
+<loc>https://cid.wse.jhu.edu/sitemap-posts.xml</loc>
+</sitemap>
+
+<sitemap>
+<loc>https://cid.wse.jhu.edu/sitemap-authors.xml</loc>
+</sitemap>
+
+<sitemap>
+<loc>https://cid.wse.jhu.edu/sitemap-tags.xml</loc>
+</sitemap>
+
+</sitemapindex>

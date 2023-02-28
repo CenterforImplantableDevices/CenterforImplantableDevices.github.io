@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//cid.wse.jhu.edu/sitemap.xsl"?><sitemapindex xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://cid.wse.jhu.edu/sitemap-pages.xml</loc><lastmod>2023-02-23T22:42:17.878Z</lastmod></sitemap><sitemap><loc>https://cid.wse.jhu.edu/sitemap-posts.xml</loc><lastmod>2023-02-28T18:03:31.624Z</lastmod></sitemap><sitemap><loc>https://cid.wse.jhu.edu/sitemap-authors.xml</loc><lastmod>2023-02-28T18:03:31.629Z</lastmod></sitemap><sitemap><loc>https://cid.wse.jhu.edu/sitemap-tags.xml</loc><lastmod>2023-02-28T18:03:31.630Z</lastmod></sitemap></sitemapindex>
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
@@ -45,7 +42,7 @@
 </url>
 <url>
 <loc>https://cid.wse.jhu.edu/resources/</loc>
-<lastmod>2023-02-28T09:30:08-05:00</lastmod>
+<lastmod>2023-02-28T13:03:33-05:00</lastmod>
 </url>
 <url>
 <loc>https://cid.wse.jhu.edu/software/</loc>
@@ -69,7 +66,7 @@
 </url>
 <url>
 <loc>https://cid.wse.jhu.edu/author/cid/</loc>
-<lastmod>2023-02-28T09:30:08-05:00</lastmod>
+<lastmod>2023-02-28T13:03:33-05:00</lastmod>
 </url>
 <url>
 <loc>https://cid.wse.jhu.edu/bionode/amp/</loc>
@@ -137,7 +134,7 @@
 </url>
 <url>
 <loc>https://cid.wse.jhu.edu/tag/resources/</loc>
-<lastmod>2023-02-28T09:30:08-05:00</lastmod>
+<lastmod>2023-02-28T13:03:33-05:00</lastmod>
 </url>
 <url>
 <loc>https://cid.wse.jhu.edu/tag/software/</loc>
@@ -192,4 +189,3 @@
 <lastmod>2023-02-28T09:51:53-05:00</lastmod>
 </url>
 </urlset>
->>>>>>> 91eccffdbdba0eb068c676231665645393c2ec03

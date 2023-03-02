@@ -19,8 +19,32 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true
-
 jobs:
+  # Build Sitemap from Repo Contents
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: Generate a sitemap
+
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 
+
+    - name: Generate the sitemap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://cid.wse.jhu.edu/
+        additional-extensions: doc docx ppt pptx xls xlsx
+        drop-html-extension: true
+
+    - name: Output stats
+      run: |
+        echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+        echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+        
   # Single deploy job since we're just deploying
   deploy:
     environment:

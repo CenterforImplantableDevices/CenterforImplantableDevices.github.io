@@ -20,16 +20,17 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 jobs:
-  # Build Sitemap from Repo Contents
-  sitemap_job:
+  # Build Sitemap from Repo Contents and Deploy
+  sitemap_job_and_deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    name: Generate a sitemap
+    name: Generate a sitemap and Deploy
 
     steps:
     - name: Checkout the repo
       uses: actions/checkout@v3
-      with:
-        fetch-depth: 0 
 
     - name: Generate the sitemap
       id: sitemap
@@ -45,22 +46,17 @@ jobs:
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
         echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
         
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: '.'
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        # Upload entire repository
+        path: '.'
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1

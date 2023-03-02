@@ -4,3 +4,4 @@ Disallow: /ghost/
 Disallow: /p/
 Disallow: /email/
 Disallow: /r/
+Disallow: /google293c7f3087fe8cd6.html
